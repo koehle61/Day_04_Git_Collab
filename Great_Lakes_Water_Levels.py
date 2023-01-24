@@ -25,7 +25,14 @@ import matplotlib.pyplot as plt
 # PART 2
 # Using the Superior Dataset, plot the Water Level, the second column, 
 # as a function of time years
-
+python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+plt.plot(sup.csv[0], sup.csv[1])
+plt.ylabel('Water Level')
+plt.xlabel('Time (years)')
+plt.title('Water Level of Lake Superior per Year')
 
 
 # PART 3
