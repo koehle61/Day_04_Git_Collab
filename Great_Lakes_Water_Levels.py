@@ -19,7 +19,11 @@ import matplotlib.pyplot as plt
 # PART 1
 # Using the Michigan/Huron Dataset, plot the Water Level, the second 
 # column, as a function of time years
-
+mhu_time, mhu_levels = np.loadtxt(mhu.csv, skiprows=1, usecols=[0,1], delimiter=',', unpack=True)
+plt.plot(mhu_time, mhu_levels)
+plt.xlabel("Year")
+plt.ylabel("Water Levels")
+plt.title("Michigan/Huron Water Levels")
 
 
 # PART 2
